@@ -2,9 +2,8 @@ import blogFetch from "../axios/config";
 
 import { useState, useEffect } from "react";
 
-import { Link } from 'react-router-dom';
-
 import "./Home.css";
+import axios from "axios";
 
 const Home = () => {
 
@@ -29,11 +28,23 @@ const Home = () => {
       getPosts();
     }, []);
 
-    
+    // async function excluirLivro(id) {
+     // if (!confirm(`Tem certeza que deseja excluir o livro "${nome}"?`)) {
+     // } else {
+     //   fetch(`/ficcaocientifica${id}`, {
+      //    method: "DELETE",
+      //  }).then((result) => {
+      //    result.json().then((resp) => {
+      //      console.warn(resp);
+      //    });
+       // });
+     //   alert(`Livro "${nome}" excluído com sucesso.`);
+    //  }
+  //  }
 
   return <div className="home">
     <h1>livros</h1>
-    {posts.length === 0 ? <p>Carregando...</p> : (
+    {posts.length === 0 ? <img src="https://retchhh.files.wordpress.com/2015/03/loading1.gif"></img> : (
       posts.map((post) => (
         <div className="post" key={post.id}>
           <h2>{post.nome}</h2>
@@ -41,11 +52,13 @@ const Home = () => {
           <p>{post.ano}</p>
           <p>{post.sinopse}</p>
           <img src={post.imagem}></img>
-          <Link to={`/ficcaocientifica/${post.id}`} className="btn">Ver mais</Link>
+          <button className="btn" onClick={() => deletePost()}>Excluir</button>
         </div>
       ))
     )}
   </div>
 }
+
+
 
 export default Home

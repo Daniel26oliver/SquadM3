@@ -8,13 +8,13 @@ const Navbar = () => {
         <img src="https://i.imgur.com/rpLVe8d.png" alt="logo"/>
         <ul>
             <li>
-                <Link to={`/start`}>Início</Link>
+                <Link to={`/start`}>INÍCIO</Link>
             </li>
             <li>
-                <Link to={`/`}>Livros</Link>
+                <Link to={`/`}>LIVROS</Link>
             </li>
             <li>
-                <Link to={`/new`} className="new-btn">Cadastrar</Link>
+                <Link to={`/new`} className="new-btn">ADICIONAR</Link>
             </li>
         </ul>
     </nav>

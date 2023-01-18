@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: rgb(238, 238, 26);
+    background-color: yellow;
+    border-bottom: 1px solid black;
 }
 
 .navbar h2 a, ul li a {
@@ -13,7 +14,7 @@
 
 .navbar img {
     width: 150px;
-    height: 28px;
+    height: 30px;
 }
 
 .navbar ul {
