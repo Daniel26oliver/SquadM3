@@ -1,4 +1,4 @@
-# Projeto em grupo - Módulo 3 - Sendo servidos
+# Projeto Livraria
 
 ![badge-status](https://img.shields.io/badge/status-FINALIZADO-green?style=for-the-badge)
 
