@@ -4,7 +4,7 @@
 
 # Objetivo do projeto
 
-Criar uma aplicação em React onde fosse possível realizar diversas métodos de requisição à API. Neste projeto deveríamos consumir a API criada por um dos integrantes do grupo no projeto individual do módulo.
+Uma aplicação em React onde é possível realizar diversas métodos de requisição à API.
 
 # Features e demonstração da aplicação
 
